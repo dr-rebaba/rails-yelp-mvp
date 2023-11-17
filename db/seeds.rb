@@ -8,11 +8,9 @@
 
 require 'faker'
 
-Restaurant.destroy_all
-
 predefined_categories = %w[chinese italian japanese french belgian]
 
-5.times do
+10.times do
   Restaurant.create!(
     name: Faker::Restaurant.name,
     address: Faker::Address.street_address,
